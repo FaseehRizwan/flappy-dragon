@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<meta name="theme-color" content="#190c17"><title>Flappy Dragon — Molten Skies</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<div id="game">
+  <canvas id="scene" aria-label="Flappy Dragon game"></canvas>
+  <div id="hud" class="hidden"><span id="score">0</span><span id="best">BEST 0</span><button id="pause" class="icon-button" aria-label="Pause">Ⅱ</button></div>
+  <div id="overlay">
+    <section id="menu" class="panel">
+      <div class="eyebrow">A LAVA-FILLED ARCADE ADVENTURE</div><h1>FLAPPY <em>DRAGON</em></h1><div class="subtitle">MOLTEN SKIES</div>
+      <img class="hero-dragon" src="assets/dragon_01.png" alt="Flappy Dragon">
+      <div class="bestline">🏆 PERSONAL BEST <strong id="menu-best">0</strong></div>
+      <button id="play" class="primary">▶ PLAY NOW</button><button id="instructions" class="secondary">HOW TO PLAY</button>
+      <div class="footnote">TAP · CLICK · SPACE TO FLAP</div>
+    </section>
+    <section id="help" class="panel hidden"><div class="eyebrow">FLIGHT SCHOOL</div><h2>HOW TO PLAY</h2>
+      <p>Tap the screen, click, or press <b>Space</b> to flap.</p><p>Fly between the lava pillars without touching them or the molten ground.</p>
+      <p>Earn <b>1 point</b> for every pair you pass. Obstacles speed up and gaps get tighter!</p>
+      <p>Press <b>P</b> or <b>Escape</b> to pause. On desktop, press <b>F</b> for fullscreen.</p>
+      <button id="help-back" class="primary">BACK TO MENU</button>
+    </section>
+    <section id="paused" class="panel hidden"><div class="eyebrow">TAKE A BREATHER</div><h2>PAUSED</h2>
+      <button id="resume" class="primary">▶ RESUME</button><button id="pause-restart" class="secondary">RESTART</button><button id="pause-menu" class="secondary">MAIN MENU</button>
+    </section>
+    <section id="over" class="panel hidden"><div class="eyebrow">THE LAVA WINS THIS ROUND</div><h2>GAME OVER</h2>
+      <div class="result"><div>SCORE <strong id="final-score">0</strong></div><div>BEST <strong id="final-best">0</strong></div></div>
+      <div id="new-best" class="newbest hidden">✦ NEW HIGH SCORE! ✦</div>
+      <button id="again" class="primary">↻ TRY AGAIN</button><button id="over-menu" class="secondary">MAIN MENU</button>
+    </section>
+  </div>
+  <div id="tip" class="hidden">TAP TO FLAP</div>
+  <div id="rotate-hint">Portrait play supported · rotate for a wider view</div>
+</div>
+<script src="game.js"></script></body></html>
