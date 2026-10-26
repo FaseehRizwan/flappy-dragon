@@ -71,7 +71,6 @@ let H = WORLD_H;
 let dpr = 1;
 
 let state = "menu";
-let distance = 0;
 let score = 0;
 let best = 0;
 
